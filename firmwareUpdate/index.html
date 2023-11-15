@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <title>X Gamepad Update Tool</title>
+  <body>
+      <p></p>
+      <button id="open">Connect X Gamepad</button>
+      <p></p>
+      <form action="">
+        <div>
+          <label>HwVer:</label>
+          <input
+            class="inputHwVer"
+            type="text"
+            id="inputHwVer"
+            disabled="disabled"
+            value=""
+          />
+        </div>
+      </form>
+      <p></p>
+      <form action="">
+        <div>
+          <label>SwVer:</label>
+          <input
+            class="inputSwVer"
+            type="text"
+            id="inputSwVer"
+            disabled="disabled"
+            value=""
+          />
+        </div>
+      </form>
+      <p></p>
+        <p></p>
+        <input class="fileSelect" type="file" id="select-file" name="file" />
+        <p></p>
+        <div class="block" id="block-reset">
+          <label class="chipText">Reset</label>
+          <input type="checkbox" id="resetAfterUpdate" disabled="disabled" checked="true" />
+        </div>
+        <p></p>
+        <button class="update" id="download" disabled="disabled">
+          Update
+        </button>
+        <progress class="update" id="download-process" max="100" value="0">
+        </progress>
+      <p></p>
+    <script src="src/index.js"></script>
+  </body>
+</html>
